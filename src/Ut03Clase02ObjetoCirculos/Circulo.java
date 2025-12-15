@@ -19,19 +19,19 @@ public class Circulo {
         this.radio = radio;
     }
 
-    //Se crean metodos
-    public double area (double radio) {
-        double area = Math.PI*(radio*radio);
+    //Se crean metodos, no hace falta incluir en parametro entre parentesis, se añade el this
+    public double area () {
+        double area = Math.PI*(this.radio*this.radio);
         return area;
     }
 
-    public double perimetro (double radio) {
-        double perimetro = 2*Math.PI*radio;
+    public double perimetro () {
+        double perimetro = 2*Math.PI*this.radio;
         return perimetro;
     }
 
     public String toString () {
-        return ("Teniendo un radio de " + radio + " el ciculo tiene un area de " + area(radio) + " y un perimetro de " +  perimetro(radio));
+        return ("Teniendo un radio de " + radio + " el ciculo tiene un area de " + area () + " y un perimetro de " +  perimetro());
 
     }
 
