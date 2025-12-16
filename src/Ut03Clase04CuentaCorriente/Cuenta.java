@@ -16,11 +16,6 @@ public class Cuenta {
         return saldo;
     }
 
-    //Setter
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
     //toString
     public String toString() {
         return "Saldo: " + saldo;
