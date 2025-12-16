@@ -6,23 +6,27 @@ public class Cuenta {
 
     private  double saldo;
 
-
+    //Constructor
     public Cuenta(double saldo) {
         this.saldo = saldo;
     }
 
+    //Getter
     public double getSaldo() {
         return saldo;
     }
 
+    //Setter
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
-    public String toString () {
+    //toString
+    public String toString() {
         return "Saldo: " + saldo;
     }
 
+    // Metodos para calcular lo que pide
     public double imposicion (double ingreso){
         return this.saldo += ingreso;
     }
