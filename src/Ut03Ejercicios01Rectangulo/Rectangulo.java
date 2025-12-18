@@ -83,11 +83,11 @@ public class Rectangulo {
     // Imprime la dimension
     public void dimension () {
         System.out.println("Estas son las dimensiones del rectángulo: ");
-        System.out.println("El ancho del rectangulo es: " + this.ancho);
-        System.out.println("El largo del rectangulo es: " + this.largo);
-        System.out.println("El área del rectángulo es "+ this.area());
-        System.out.println("El perimetro del rectángulo es "+this.perimetro());
-        System.out.println("La diagonal del rectángulo es "+this.diagonal());
+        System.out.println("El ancho es: " + this.ancho);
+        System.out.println("El largo es: " + this.largo);
+        System.out.println("El área  es "+ this.area());
+        System.out.println("El perimetro es "+this.perimetro());
+        System.out.println("La diagonal es "+this.diagonal());
     }
 
     public void dibujar (){
