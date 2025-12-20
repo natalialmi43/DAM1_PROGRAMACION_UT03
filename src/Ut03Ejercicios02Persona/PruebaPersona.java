@@ -2,10 +2,8 @@ package Ut03Ejercicios02Persona;
 
 import java.util.Scanner;
 
-
 public class PruebaPersona {
     public static void main(String[] args) {
-
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Teclea tu nombre");
