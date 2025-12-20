@@ -4,25 +4,28 @@ public class Rectangulo {
 
     private int ancho;
     private int largo;
+    private int anchoPorDefecto = 1;
+    private int largoPorDefecto = 2;
+
 
     // Se crea constructor sin parámetros
     public Rectangulo() {
-        this.ancho = 1;
-        this.largo = 2;
+        this.ancho = anchoPorDefecto;
+        this.largo = largoPorDefecto;
     }
 
-    //Se crea constructor con parámetros y que chequé que son positivos
+    //Se crea constructor con parámetros que revise que son positivos
     public Rectangulo(int ancho, int largo) {
         if (ancho > 0 ){
             this.ancho = ancho;
         } else {
-            this.ancho = 1;
+            this.ancho = anchoPorDefecto;
         }
 
         if (largo > 0){
             this.largo = largo;
         } else {
-          this.largo = 1;
+          this.largo = largoPorDefecto;
         }
     }
 

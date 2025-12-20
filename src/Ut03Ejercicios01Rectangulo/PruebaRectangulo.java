@@ -3,7 +3,7 @@ package Ut03Ejercicios01Rectangulo;
 public class PruebaRectangulo {
     public static void main(String[] args) {
 
-        Rectangulo r1 = new Rectangulo(4,8);
+        Rectangulo r1 = new Rectangulo(4,15);
 
         System.out.println("El rectángulo es " + r1.comprueba());
 
@@ -11,6 +11,7 @@ public class PruebaRectangulo {
 
         System.out.println("El dibujo del rectángulo seria:");
         r1.dibujar();
+
 
     }
 }
