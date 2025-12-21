@@ -10,7 +10,7 @@ public class PruebaPersona {
         String nombre = sc.nextLine();
         System.out.println("Teclea tu edad");
         int edad = sc.nextInt();
-        System.out.println("Teclea tu sexo");
+        System.out.println("Teclea tu sexo, M/H");
         char sexo = sc.next().charAt(0);
         System.out.println("Teclea tu peso");
         double peso = sc.nextDouble();
