@@ -43,7 +43,6 @@ public class ControladorFlota {
         n2.mostrarEstado();
 
         //Mostrar nave con mas combustible
-        /*
         if (n1.calcularCombustible()>=n2.calcularCombustible() && n1.calcularCombustible()>=n3.calcularCombustible()){
             System.out.println("La nave con mas energia es la nave Blanca");
         } else if (n2.calcularCombustible()>= n1.calcularCombustible() && n2.calcularCombustible()>= n3.calcularCombustible()) {
@@ -51,13 +50,6 @@ public class ControladorFlota {
         } else {
             System.out.println("La nave con mas energia es la nave Negra");
         }
-         */
 
-        for (int i = 0; i < flota.length; i++) {
-            if (flota[i]>flota[i+1]){
-
-
-            }
-        }
     }
 }
