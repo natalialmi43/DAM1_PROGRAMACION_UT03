@@ -52,5 +52,12 @@ public class ControladorFlota {
             System.out.println("La nave con mas energia es la nave Negra");
         }
          */
+
+        for (int i = 0; i < flota.length; i++) {
+            if (flota[i]>flota[i+1]){
+
+
+            }
+        }
     }
 }
