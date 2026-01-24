@@ -16,6 +16,7 @@ public class NumeroPrimo {
         this.primo = primo;
     }
 
+
     public boolean esPrimo (){
 
         //Se devuevle directamente el false
@@ -36,12 +37,48 @@ public class NumeroPrimo {
     }
 
     public NumeroPrimo siguiente (){
+
         int posiblePrimo = this.primo + 1;
-        while (!esPrimo(posiblePrimo)){
-            posiblePrimo ++;
+
+        // Esto es un while infinito hasta que encuentre el siguiente, sale del bucle con el return.
+        while (true){
+            // Se crea el objeto.
+            NumeroPrimo siguiente = new NumeroPrimo(posiblePrimo);
+
+            if (siguiente.esPrimo()){
+                return siguiente;
+            }
+            //imp no olvidar el ++
+            posiblePrimo++;
         }
+    }
 
-        return new NumeroPrimo(posiblePrimo);
 
+    public int posicion (){
+        int k = 0;
+
+        for (int i = 2; i <= this.primo ; i++) {
+            //Se crea este objeto para preguntar a i si es primo y luego se pasa por esPrimo().
+            NumeroPrimo aux = new NumeroPrimo(i);
+            if(aux.esPrimo()){
+                k++;
+            }
+        }
+        return k;
+    }
+
+
+    public int sumaAnteriores () {
+        int suma = 0;
+
+        for (int i = 2; i < this.primo; i++) {
+
+            NumeroPrimo aux = new NumeroPrimo(i);
+
+            if (aux.esPrimo()){
+                suma += i;
+            }
+        }
+        return suma;
     }
 }

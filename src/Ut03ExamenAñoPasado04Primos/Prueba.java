@@ -4,9 +4,13 @@ public class Prueba {
     static void main(String[] args) {
 
         NumeroPrimo n1 = new NumeroPrimo(3);
-        NumeroPrimo n2 = new NumeroPrimo(4);
+        NumeroPrimo n2 = n1.siguiente();
 
-        System.out.println(n1.esPrimo());
-        System.out.println(n2.esPrimo());
+
+
+        System.out.println("original " + n1.getPrimo());
+        System.out.println("siguiente " + n2.getPrimo());
+        System.out.println( "Posicion: " + n1.posicion());
+        System.out.println("Suma: " + n1.sumaAnteriores());
     }
 }
