@@ -61,7 +61,7 @@ public class Usuario {
             for (int i = 0; i < historial.length - 1; i++) {
                 historial[i] = historial[i + 1]; // Va moviendo de derecha a izquierda. Deja vacio el .length-1
             }
-            historial[historial.length - 1] = c; // Ponemos el nuevo en la última posición
+            historial[historial.length - 1] = c; // Ponemos el nuevo en la última posición.
         }
     }
 

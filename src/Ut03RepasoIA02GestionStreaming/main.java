@@ -19,6 +19,7 @@ public class main {
         u1.verContenido(c3);
 
 
+
         System.out.println(Arrays.toString(u1.getHistorial()));
     }
 }

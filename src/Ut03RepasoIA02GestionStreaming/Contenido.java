@@ -9,14 +9,14 @@ public class Contenido {
 
     public Contenido(String titulo, int duracionMinutos) {
         this.titulo = titulo;
-        this.duracionMinutos = duracionMinutos;
+        setDuracionMinutos(duracionMinutos);
         this.visto = false;
         this.genero = "Desconocido";
     }
 
     public Contenido(String titulo, int duracionMinutos, String genero) {
         this.titulo = titulo;
-        this.duracionMinutos = duracionMinutos;
+        setDuracionMinutos(duracionMinutos);
         this.visto = false;
         this.genero = genero;
     }
@@ -64,11 +64,7 @@ public class Contenido {
     }
 
     public boolean esLargo(){
-        if (duracionMinutos > 120){
-            return true;
-        } else {
-            return false;
-        }
+        return duracionMinutos > 120;
     }
 
     public String toString (){
